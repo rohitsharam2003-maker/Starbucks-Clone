@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starbucks Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    background:#f3f3f3;
+}
+
+/* Navbar */
+nav{
+    background:#006241;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 60px;
+}
+nav img{
+    width:55px;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+nav ul li{
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+}
+nav ul li:hover{
+    text-decoration:underline;
+}
+
+/* Hero */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:70px;
+    background:white;
+}
+.hero-text{
+    width:50%;
+}
+.hero-text h1{
+    font-size:55px;
+    color:#006241;
+}
+.hero-text p{
+    margin:20px 0;
+    font-size:18px;
+    color:#333;
+}
+.hero-text button{
+    background:#006241;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+}
+.hero-text button:hover{
+    background:#004f34;
+}
+.hero img{
+    width:380px;
+    border-radius:20px;
+}
+
+/* Drinks Section */
+.section{
+    padding:70px;
+}
+.section h2{
+    text-align:center;
+    margin-bottom:50px;
+    color:#006241;
+    font-size:36px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+    gap:35px;
+}
+.card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:14px;
+}
+.card h3{
+    margin:15px 0 5px;
+}
+.card p{
+    color:gray;
+}
+
+/* Footer */
+footer{
+    background:#006241;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <img src="https://upload.wikimedia.org/wikipedia/sco/d/d3/Starbucks_Corporation_Logo_2011.svg">
+    <ul>
+        <li>Menu</li>
+        <li>Rewards</li>
+        <li>Gift Cards</li>
+        <li>Stores</li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>More than just coffee</h1>
+        <p>Premium coffee, handcrafted beverages and delicious food.</p>
+        <a  href="https://www.starbucks.com/"><button>Order Now</button></a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+</section>
+
+<!-- Drinks -->
+<section class="section">
+    <h2>Popular Drinks</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+            <h3>Cappuccino</h3>
+            <p>Rich & Creamy</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13">
+            <h3>Latte</h3>
+            <p>Smooth & Milky</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772">
+            <h3>Cold Brew</h3>
+            <p>Refreshing & Bold</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
+            <h3>Mocha</h3>
+            <p>Chocolate Love</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2025 Starbucks Clone | Educational Project
+</footer>
+
+</body>
+</html>
